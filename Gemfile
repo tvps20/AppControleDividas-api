@@ -30,6 +30,8 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # Substituto do framework de teste, mais completo
   gem 'rspec-rails', '~> 3.5'
+  # Gera dados pre-configurados para testes
+  gem 'factory_girl_rails'
 end
 
 group :test do
@@ -37,8 +39,6 @@ group :test do
   gem 'database_cleaner', '~> 1.5.3'
   # Metodos adicionais para testar o codigo
   gem 'shoulda-matchers', '~> 3.1'
-  # Gera dados pre-configurados para testes
-  gem 'factory_girl_rails'
   # Gera dados aleatorios
   gem 'faker'
 end
