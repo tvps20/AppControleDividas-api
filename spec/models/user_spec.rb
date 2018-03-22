@@ -10,6 +10,6 @@ RSpec.describe User, type: :model do
   # Verifica se o modo esta validando o password
   it {is_expected.to validate_confirmation_of(:password)}
   # Testa se o formato e email passa
-  it {is_expected.to allow_value("thiago@santiago.com").for(:email)}
+  it {is_expected.to allow_value('thiago@santiago.com').for(:email)}
 
 end
